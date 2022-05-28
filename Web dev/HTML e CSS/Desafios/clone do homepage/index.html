@@ -6,22 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone do google</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <style>
+        .lupa{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+    <style>
+        .container{
+            height: 70vh;
+            position: relative;
+        }
+    </style>
+
+    <style>
+        .elemento{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+
+    <style>
+        #google{
+            width: 292px;
+            height: 92px;
+        }
+    </style>
+
 </head>
 <body>
-    <img src="imagens/Google_microphone_logo.png" alt="microfone de busca">
-    <img src="imagens/png-transparent-google-search-android-search-box-search-engine-optimization-loupe-technic-symbol-magnifying-glass-thumbnail.png" alt="barra de pesquisa">
-    <img src="imagens/Jão-modified.png" alt="foto de usuário">
-    <img src="imagens/googlelogo_color_284x96dp.png" alt="titulo do google">
-    <img src="imagens/google-menu-icon-2.jpg" alt="google menu">
-    <form class="Pesquise"></form>
-    <input type="text">
-
-    <header class="menu">
-        <div class="menu-section left">
-
+    <div class="container">
+        <center>
+        <div class="elemento">       
+            <img src="imagens/googlelogo_color_284x96dp.png" alt="logo do google" id="google">
+            <form class="dimensões"></form>
+           <div class="search-box">
+                <input type="text" class="search-text" placeholder="Pesquisa">  
+                <a class="search-btn">
+                    <img src="imagens/png-transparent-google-search-android-search-box-search-engine-optimization-loupe-technic-symbol-magnifying-glass-thumbnail.png" alt="lupa" class="lupa">
+            </div>
+            </a>         
         </div>
-
-
-    </header>
+        </center>
+    </div>
+   
 </body>
 </html>
