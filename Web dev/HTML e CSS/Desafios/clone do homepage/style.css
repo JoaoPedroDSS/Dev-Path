@@ -1,0 +1,68 @@
+.lupa{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.meio{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.elemento{
+    position: relative;
+}
+
+#google{
+    width: 292px;
+    height: 92px;
+}
+
+.search-box{
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 27px;
+    width: 550px;
+    padding: 8px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    border-style: groove;
+    border-width: 1.5px;
+
+}
+
+.search-text{
+    border: none;
+    background: none ;
+    outline: none;
+    padding: 3%;
+    font-size: 16px;
+    line-height: 40px;
+    width: 400px;
+}
+
+.topo{
+    position: absolute;
+    background: rgb(165, 145, 145);
+    width: 100%;
+    height: 45px;
+
+}
+
+.login{
+    position: relative;
+    width: 8%;
+    height: 35px;
+    color: white;
+    background: #1a73e8;
+    border-radius: 6px;
+    margin-left: 88%;
+    margin-top: -20px;
+
+}

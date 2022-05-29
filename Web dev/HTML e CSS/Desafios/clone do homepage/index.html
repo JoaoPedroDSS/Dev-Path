@@ -6,52 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone do google</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-
-    <style>
-        .lupa{
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-        }
-    </style>
-
-    <style>
-        .container{
-            height: 70vh;
-            position: relative;
-        }
-    </style>
-
-    <style>
-        .elemento{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    </style>
-
-    <style>
-        #google{
-            width: 292px;
-            height: 92px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <div class="container">
+    <div class="topo">
+        <img src="imagens/google-menu-icon-2.jpg" alt="menu google" height="20" width="20">
+        <div class="login">
+            <a href="#">Login</a>
+        </div>
+        
+    </div>
+
+    <div class="meio">
         <center>
         <div class="elemento">       
             <img src="imagens/googlelogo_color_284x96dp.png" alt="logo do google" id="google">
-            <form class="dimensões"></form>
            <div class="search-box">
                 <input type="text" class="search-text" placeholder="Pesquisa">  
                 <a class="search-btn">
                     <img src="imagens/png-transparent-google-search-android-search-box-search-engine-optimization-loupe-technic-symbol-magnifying-glass-thumbnail.png" alt="lupa" class="lupa">
-            </div>
-            </a>         
+                </a>     
+            </div> 
         </div>
         </center>
     </div>
