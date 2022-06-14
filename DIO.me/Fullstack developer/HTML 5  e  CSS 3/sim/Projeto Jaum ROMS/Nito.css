@@ -1,0 +1,15 @@
+.title, .subtitle, .text{
+    color: rgb(226, 173, 173);
+}
+
+.post {
+    background: fixed;
+    background-color: gray;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.mediafire {
+    color: aqua;
+}
