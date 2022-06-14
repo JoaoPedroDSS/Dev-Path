@@ -3,11 +3,14 @@
 }
 
 .post {
-    background: fixed;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     background-color: gray;
     padding: 10px;
     border: 3px solid black;
     border-radius: 10px;
+    max-width: 500px;
 }
 
 .mediafire {
@@ -17,4 +20,12 @@
 }
 .mediafire a {
     color: mediumblue;
+}
+
+.img-trigger {
+    width: 100% ;
+}
+
+.pagina {
+    text-align: center;
 }
