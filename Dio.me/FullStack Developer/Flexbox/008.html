@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex basis</title>
+    <style>
+        .container{
+            max-width: 500px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .items{
+            background-color: coral;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+        .auto{
+            flex-basis: auto;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fb0{
+            flex-basis: 0;
+        }
+        .w100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>auto</p>
+    <div class="container">
+        <div class="items auto fg-1">A</div>
+        <div class="items auto fg-1">BBB</div>
+        <div class="items auto fg-1">C</div>
+        <div class="items auto fg-1">DEF</div>
+    </div>
+
+    <p>basis 0</p>
+    <div class="container">
+        <div class="items fb0 fg-1">A</div>
+        <div class="items fb0 fg-1">BBB</div>
+        <div class="items fb0 fg-1">C</div>
+        <div class="items fb0 fg-1">DEF</div>
+    </div>
+
+    
+    <p>basis + width</p>
+    <div class="container">
+        <div class="items w100 ">A</div>
+        <div class="items w100 ">BBB</div>
+        <div class="items w100">C</div>
+        <div class="items w100">DEF</div>
+    </div>
+</body>
+</html>
