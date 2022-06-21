@@ -17,20 +17,26 @@ ul{
 }
 ul li a{
     text-decoration: none;
+    margin: 5px;
+}
+div img{
+    display: block;
+    width: 100%;
 }
 header{
     background-color: rgba(1, 1, 114, 0.932);
     height: 100px;
     display: flex;
     align-items: center;
+  
 }
 header .list-item{
     display: flex;
-    align-items: center;
+    max-width: px;
     width: 100%;
-    max-width: 992px;
     color: white;
-    justify-content: space-between;
+    justify-content: end;
+    align-items: center;
 }
 .list-item li a{
     color: white
@@ -38,5 +44,173 @@ header .list-item{
 
 header .menu{
     color: white;
-    
+
+}
+
+.apresentação{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto-apresentação{
+    min-height: 200px;
+
+}
+.texto-apresentação h1{
+    color: rgba(1, 1, 114, 0.932);
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.btn{
+    background-color: rgba(1, 1, 114, 0.932) ;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#quem-somos{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+#quem-somos h2{
+    font-size: 32px;
+    color: rgba(1, 1, 114, 0.932) ;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quem-somos h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: rgba(1, 1, 114, 0.932) ;
+    position: relative;
+}
+#quem-somos p{
+    margin-bottom: 10px;
+    width: 90%;
+}
+#quem-somos img{
+    min-width: 400px;
+}
+.container-externo{
+    background-color: rgba(1, 1, 114, 0.932);
+    width: 100%;
+}
+#serviços{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.list-serviços{
+    display: flex;
+    justify-content: space-between;
+}
+.list-serviços .item-serviço{
+    text-align: center;
+}
+#serviços h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.item-serviço a{
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgba(1, 1, 114, 0.932);
+    font-size: 12px;
+    font-weight: 700;
+}
+.item-serviço p{
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.item-serviço img{
+    width: 80%;
+    margin: auto;
+}
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#planos h2{
+    font-size: 32px;
+}
+.item-plano{
+    flex: 1;
+    border: 5px solid rgba(1, 1, 114, 0.932);
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+.item-plano .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.item-plano h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+.item-plano h3::after{
+    content: "";
+    background-color: rgba(1, 1, 114, 0.932) ;
+    width: 100%;
+    height: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.item-plano li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgba(1, 1, 114, 0.932);
+    margin-right: 5px;
+}
+.item-plano li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+footer{
+    background-color: rgba(1, 1, 114, 0.932) ;
+}
+footer .footer{
+    justify-content: space-between;
+    color: #fff;
+    height: 70px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
 }
