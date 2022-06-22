@@ -69,10 +69,10 @@ p{
 .facebook{
     display: flex;
     justify-content: center;
+    flex-shrink: 3;
 }
 .facebook a{
     display: flex;
-    flex-wrap: wrap;
     font-size: 14px;
     text-decoration: none;
     margin-left: 10px;
@@ -85,6 +85,8 @@ p{
     display: flex;
     font-size: 14px;
     align-self: center;
+    height: auto;
+    margin-bottom: 15px;
 }
 footer{
     max-height: 50px;
