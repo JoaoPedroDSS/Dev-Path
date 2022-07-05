@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: 20pt arial ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Velocimetro</h1>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Verificar" onclick="compara()">
+    <div id="res"></div>
+    <script>
+        function compara() {
+            var v = window.document.getElementById('vel')
+            var vl = Number(v.value)
+            var res = window.document.getElementById('res')
+            if (vl>60){
+                res.innerHTML += 'Multado! A velocidade máxima é <strong>60kmh</strong>'
+            }
+            res.innerHTML += (`<p>Sua velocidade foi de ${vl}kmh </p>`)
+        }
+    </script>
+</body>
+</html>
