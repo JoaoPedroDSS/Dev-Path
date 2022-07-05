@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area{
+            font: normal 20pt arial;
+            color: white;
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseout="saiu()">
+        interaja
+    </div>
+     <div>
+        <h1>Somando números</h1>
+        <input type="number" name="txt1">
+        +
+        <input type="number" name="txt2">
+        <button onclick="somar()">Somar</button>
+     </div>
+     <p class="res">
+        resultado
+     </p>
+    <script>
+        var n1 = document.getElementById('txt1')
+        var n2 = document.getElementById('txt2')
+        var r = document.getElementsByClassName('res')
+        function somar() {
+            r.innerText= (`A Soma de ${Number(n1)} com ${Number(n2)} é ${Number(n1)+ Number(n2)}`)
+        }
+
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clickou)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        function clickou() { 
+            a.innerText = 'Clickou!'
+            a.style.background = 'red'
+        }
+        function entrou(){
+            a.innerText = 'Entrou'
+        }
+        function saiu() {
+            a.innerText= 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
