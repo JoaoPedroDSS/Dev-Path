@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilo.css">
   
 </head>
-<body onload="carregar()">
+<body>
     <header>
         <h1>Vamos contar</h1>
     </header>
@@ -16,16 +16,15 @@
         <div id="">
             
         </div>
-        <div id="entradas">
-            <input type="number" name="passo" id="passo">Passo:</input>
-            <input type="number" name="fim" id="fim">Fim:</input>
-            <input type="number" name="inicio" id="inicio">Inicio:</input>
-           
+        <div id="dados">
+            <p>Inicio: <input type="number" name="inicio" id="incio"></p>
+            <p>Fim: <input type="number" name="fim" id="fim"></p>
+            <p>Passo: <input type="number" name="passo" id="passo"></p>
         </div>
         <input type="button" value="Contar" onclick="contar()">
         <p id="res">Aqui</p>
     </section>
-
+ 
     <footer>
         <p>&copy; J@um Pedro</p>
     </footer>
