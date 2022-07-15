@@ -1,11 +1,13 @@
 .title, .subtitle, .text{
     color: rgb(226, 173, 173);
 }
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .post {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px;
     border: 3px solid black;
     border-radius: 10px;
