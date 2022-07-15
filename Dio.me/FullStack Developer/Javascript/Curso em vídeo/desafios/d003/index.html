@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troco</title>
+</head>
+<body>
+    <h1>Calcular troco <input type="button" value="Calcular" onclick="calcular()"></h1>
+
+    <script>
+        function calcular() {
+            var item = window.prompt('Qual o produto que você comprou?')
+            var pago = window.prompt(`Quanto você pagou pelo(a) ${item}?`)
+            var valor = window.prompt(`E quanto é o(a) ${item} ?`)
+            if (pago>valor){
+                window.alert(`Seu troco é de R$${pago-valor}`)
+            } else if (pago<valor){
+                window.alert(`Faltam R$${valor-pago}`)
+            }
+        }
+    </script>
+</body>
+</html>
