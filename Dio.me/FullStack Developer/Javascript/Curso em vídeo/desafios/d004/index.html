@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quer tentar? <input type="button" value="Começar" onclick="começar()"></h1>
+
+    <script>
+       var random = Math.floor(Math.random() * 10)
+       function começar() {
+       while (num!=random){
+        var num = window.prompt('Estou pensando em um número de 0 a 9, consegue adivinhar?'+ random)
+            if (num>random){
+             window.alert("Mais baixo")
+            } else if (num<random){
+            window.alert('Mais alto')
+            } else if (num == random ){
+            window.alert('Acertou!')
+           
+    }
+}
+    } 
+
+    </script>
+</body>
+</html>

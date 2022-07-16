@@ -1,0 +1,25 @@
+body{
+    font: normal 20pt arial;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+    flex-direction: column;
+}
+
+
+section{
+   
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5) ;
+
+}
+footer{
+    font-style: italic;
+}
