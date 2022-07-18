@@ -6,5 +6,5 @@ function analisa() {
     item.text = `${num} e unas cossitas`
     analisador.appendChild(item)
     var listinha = [item]
-    window.alert(listinha)
+    
 }
