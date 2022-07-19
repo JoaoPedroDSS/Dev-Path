@@ -14,8 +14,8 @@ section{
     margin: auto;
     border-radius: 10px;
     background-color: white;
-    width: 500px;
-    height: 300px;
+    width: 75vh;
+    height: auto;
     padding: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5) ;
 
