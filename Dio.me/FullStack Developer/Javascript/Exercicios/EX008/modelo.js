@@ -5,12 +5,21 @@ function analisa() {
     var num = Number(numero.value)
     var analisador = window.document.getElementById("Analisador")
     var item = window.document.createElement('option')
+    //essa verificação serve para ver se o número está dentro da lista
+    function inlista(n,l) {
+        if (l.indexOf(n) != -1){
+            return false
+        } else {return true}
+    }
     if (num>=1 && num<=100){
-        item.text = `${num}`
+        item.text = ` valor ${num} adicionado`
         analisador.appendChild(item) 
         lista.push(+num)
         console.log(lista);
-    } else {
+    } if (inlista(num,lista) == true){
+        window.alert("Número já adicionado")
+    }
+    else {
         window.alert("Entrada inválida, por favor tente novamente")
     }
 }
@@ -20,6 +29,7 @@ function finalizar() {
     var soma = 0
     var maior = 0
     menor = 100
+   
     var retorno = window.document.getElementById("retorno")
     retorno.innerHTML = `A quantidade de números digitada foi ${lista.length}\n`
    
@@ -33,7 +43,8 @@ function finalizar() {
 
     }
      //testes condicionais lógicos e validações
-    retorno.innerHTML += `\n A Soma dos valores é de ${soma}\n`
-    retorno.innerHTML += `\n O Maior dos valores é ${maior}\n`
-    retorno.innerHTML += `\n O Menor dos valores é ${menor}`
+    retorno.innerHTML += `\n A Soma dos valores é de ${soma}\n `
+    retorno.innerHTML += ` \n O Maior dos valores é ${maior} \n`
+    retorno.innerHTML += ` O Menor dos valores é ${menor} `
+    retorno.innerHTML += ` A Média dos valores é ${soma/lista.length} `
 }

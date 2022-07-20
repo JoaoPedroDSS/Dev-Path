@@ -8,6 +8,9 @@ body{
     flex-direction: column;
 }
 
+select{
+    width: 150px;
+}
 
 section{
    
