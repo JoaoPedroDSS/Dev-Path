@@ -8,17 +8,20 @@ function analisa() {
     //essa verificação serve para ver se o número está dentro da lista
     function inlista(n,l) {
         if (l.indexOf(n) != -1){
-            return false
-        } else {return true}
+            return true
+        } else {return false}
     }
-    if (num>=1 && num<=100){
+    if (inlista(num,lista) == true){
+        window.alert("Número já adicionado")
+    }
+    //if que testa se o inpút está sucetivel a entrar na lista 
+    if (num>=1 && num<=100 && inlista(num,lista) == false ){
         item.text = ` valor ${num} adicionado`
         analisador.appendChild(item) 
         lista.push(+num)
         console.log(lista);
-    } if (inlista(num,lista) == true){
-        window.alert("Número já adicionado")
-    }
+    } 
+    //alerta de erro caso dê errado
     else {
         window.alert("Entrada inválida, por favor tente novamente")
     }
@@ -43,8 +46,8 @@ function finalizar() {
 
     }
      //testes condicionais lógicos e validações
-    retorno.innerHTML += `\n A Soma dos valores é de ${soma}\n `
-    retorno.innerHTML += ` \n O Maior dos valores é ${maior} \n`
-    retorno.innerHTML += ` O Menor dos valores é ${menor} `
-    retorno.innerHTML += ` A Média dos valores é ${soma/lista.length} `
+    retorno.innerHTML += `<p> A Soma dos valores é de ${soma}<\p>`
+    retorno.innerHTML += ` <p> O Maior dos valores é ${maior} <\p>`
+    retorno.innerHTML += ` <p>O Menor dos valores é ${menor} <\p>`
+    retorno.innerHTML += ` <p>A Média dos valores é ${soma/lista.length} <\p>`
 }
