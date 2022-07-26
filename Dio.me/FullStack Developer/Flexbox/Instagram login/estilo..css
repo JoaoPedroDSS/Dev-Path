@@ -91,3 +91,19 @@ p{
     margin-bottom: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
+footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 10vh ;
+    width: 100%;
+    
+}
+body,footer{
+    align-items: flex-end;
+}
+.autor{
+    display: flex;
+    color: grey;
+    align-self: center;
+    padding-left: 50% ;
+}
