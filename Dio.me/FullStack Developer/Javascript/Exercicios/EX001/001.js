@@ -15,4 +15,8 @@ function nome(x) {
    console.log(soma);
    console.log(num.slice(1));
 }
-nome(12)
+nome(39)
+
+function name(params) {
+    
+}

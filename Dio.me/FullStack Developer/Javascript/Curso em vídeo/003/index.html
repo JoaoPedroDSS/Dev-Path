@@ -27,6 +27,10 @@
         <input type="number" name="txtn2" id="txtn2">
         <input type="button" value="Somar" onclick="somar()">
         <div id="res">Resultado</div>
+
+
+
+
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1')
@@ -51,10 +55,13 @@
             a.innerText = 'Entrou'
             a.style.background = 'yellow'
             a.style.color = 'black'
+            a.style.transition = '0.5s'
+            a.style.height = '400px'
         }
         function saiu() {
             a.innerText= 'Saiu'
             a.style.background = 'green'
+            a.style.height = '200px'
         }
     </script>
 </body>

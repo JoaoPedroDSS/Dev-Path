@@ -14,7 +14,7 @@ function analisa() {
     if (inlista(num,lista) == true){
         window.alert("Número já adicionado")
     }
-    //if que testa se o inpút está sucetivel a entrar na lista 
+    //if que testa se o input está sucetivel a entrar na lista 
     if (num>=1 && num<=100 && inlista(num,lista) == false ){
         item.text = ` valor ${num} adicionado`
         analisador.appendChild(item) 

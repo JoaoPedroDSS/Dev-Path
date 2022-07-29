@@ -6,11 +6,11 @@ function criar() {
         window.alert('Por favor, digite um número!')
     } else{
         var num = Number(numero.value)
-        c=1
+        c=2
         tabuada.innerHTML= ''
-        while (c<11){
+        while (c<10){
             var item = window.document.createElement('option')
-            item.text = `${num} x ${c} = ${num*c} `
+            item.text = `${num} x ${c} = ${num*c}`
             tabuada.appendChild(item)
             c++
         }
