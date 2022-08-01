@@ -28,30 +28,43 @@ body{
     height: 10px;
     border: 2px solid #fff;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .bar:hover{
     background-color: #fff;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 input{
     display: none;
 }
-.slide{
+.slides{
     display: flex;
     width: 500%;
     height: 100%;
 }
 .slide{
-    width: 20%;
-    transition: .5s;
+    width: 20% ;
+    transition: .6s;
 }
 
-
-#slide1:checked{
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~ .s1 {
     margin-left: 0;
 }
-#slide2:checked{
-    margin-left: -20%;
+#slide2:checked ~ .s1 {
+    margin: -10% ;
+}
+#slide3:checked ~ .s1 {
+    margin: -20%;
+}
+#slide4:checked~ .s1{
+    margin: -30%;
+}
+#slide5:checked~ .s1{
+    margin: -40%;
 }
