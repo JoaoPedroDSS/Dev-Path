@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER*/
+.imagem img{
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.Menu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFE15F;
+    width: 100vw;
+    max-height: 40px;
+    background-color: #D92332;
+}
+.opçoes{
+    display: flex;
+    flex-grow: 1;
+}
+.p{
+    display: flex;
+    flex-grow: 1;
+}
+.img-pata{
+    margin-left: 15px;
+    display: flex;
+    width: 40px;
+    flex-grow: 1;
+}
+/*ACABOU O HEADER*/
+
+/*CONTENT*/
+.produtos{
+    margin-top: 300px;
+}
