@@ -1,5 +1,12 @@
-body{
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
 
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 *{
@@ -7,9 +14,39 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+/*HEADER, PARTE DO CABEÇALHO */
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: Arial black;
+    font-size: 40px;
+}
 
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
 
+header nav a:hover{
+    color: #fff;
+    transition: .5s;
+}
 
+/*ACABA O HEADER */
 
-
-
+/*FILME*/
+.filme-principal{
+    font-size: 16px ;
+    background:url('C:/Users/Larissa Yamile/Desktop/Dev Path/Dio.me/FullStack Developer/projeto/netflix-clone-master/img/capa-house.jpg');
+    
+    height: 400px;
+    background-size: cover;
+    background-color: rgb(119, 119, 119);
+}
+/*ACABA O FILME*/
