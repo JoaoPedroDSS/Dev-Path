@@ -5,7 +5,7 @@
 
 body{
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -70,7 +70,7 @@ header nav a:hover{
     border: none;
     color: white;
     padding: 15px 10px;
-    margin-right: 15px;
+    margin-left: 10px;
     font-size: 12px;
     cursor: pointer;
     
@@ -81,4 +81,23 @@ header nav a:hover{
     transition: .3s ease all;
 
 }
+.botao i{
+    margin-right: 5px;
+}
+.container{
+    margin-left: 10px;
+    margin-right: 10px; ;
+}
+.filme-principal .container{
+    width: 60%;
+}
 /*ACABA O FILME*/
+
+/*COMEÇA O CARROSEL*/
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+/*ACABA O CARROSEL*/
