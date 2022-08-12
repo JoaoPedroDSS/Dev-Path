@@ -100,4 +100,12 @@ header nav a:hover{
     display: block;
 
 }
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botao-filme{
+    
+}
 /*ACABA O CARROSEL*/
