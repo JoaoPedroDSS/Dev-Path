@@ -5,11 +5,16 @@ body{
 }
 
 /*HEADER*/
+header{
+    margin-bottom: 100px;
+}
 .imagem img{
     width: 80vw;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 .Menu{
@@ -39,6 +44,8 @@ body{
 /*ACABOU O HEADER*/
 
 /*CONTENT*/
+
+
 .produtos{
     margin-top: 300px;
 }
