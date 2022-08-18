@@ -21,19 +21,31 @@
 
     <!--Progress Bar-->
     <script src="script/progressbar.min.js"></script>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
        <div class="container" id="nav-container">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <a href="#" class="nav-bar brand">
-                <img src="imagens/corvo.png" alt="Raven Agency logo"> Raven Agency
-            </a>
-            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="imagens/corvo.png" alt="Raven Agency logo">Raven Agency
+                </a>
+                <!--Botão de hamburguer-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            </button>
-        </nav>
+                <!--Menu da navbar-->
+                <div class="colapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu">Home</a>
+                        <a class="nav-item nav-link" id="about-menu">A agência</a>
+                        <a class="nav-item nav-link" id="services-menu">Serviços</a>
+                        <a class="nav-item nav-link" id="team-menu">Time</a>
+                        <a class="nav-item nav-link" id="contact-menu">Contato  </a>
+                    </div>
+                </div>
+            </nav>
        </div>
     </header>
 
