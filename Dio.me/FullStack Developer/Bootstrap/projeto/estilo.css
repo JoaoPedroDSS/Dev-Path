@@ -86,7 +86,37 @@ header, .navbar{
     color: #353d41;
     margin: 0;
 }
+.main-title{
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
 
-#about-list li{
-    text-decoration: none;
 }
+.main-title::after{
+    content:"";
+    border-top: 2px solid #333;
+    margin-top: 60px;
+    width: 15%;
+    position: absolute;
+    left: 42.4%;
+}
+.about-title{
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#about-list{
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0;
+}
+#about-list li{
+    line-height: 30px;
+}
+#about-list i{
+    color: #65DAF9;
+    margin-right: 10px;
+}
+/*AQUI ACABA A SESSÃO SOBRE A AGÊNCIA*/
