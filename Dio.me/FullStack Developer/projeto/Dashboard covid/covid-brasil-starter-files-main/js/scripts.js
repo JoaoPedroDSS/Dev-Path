@@ -1,3 +1,4 @@
+
 const _elements = {
     loading: document.querySelector(".loading"),
     switch: document.querySelector(".switch__track"),
@@ -25,7 +26,6 @@ const _data = {
 const _charts = {};
 
 _elements.switch.addEventListener("click", () => {
-
 });
 
 _elements.stateSelectToggle.addEventListener("click", () => {
