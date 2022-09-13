@@ -75,7 +75,14 @@ html{
 body{
     background-color: var(--clr-background);
     transition: var(--transition);
-
+}
+section{
+    background-color: var(--clr-card);
+    transition: var(--transition
+    );
+    box-shadow: var(--shadow-card);
+    padding: 1.6rem;
+    border-radius: 1rem;
 }
 
 /**********************************/
@@ -251,7 +258,36 @@ body{
 /* 6. Status
 /**********************************/
 
+.status{
+    min-height: 12rem;
+    display: flex;
+    align-items: center;
 
+}
+.status-icon{
+    font-size: 3.6rem;
+    margin-right: .8rem ;
+}
+.info{
+    font: var(--ts-caption);
+    text-transform: uppercase;
+}
+.status-icon--confirmed, .info-total--confirmed{
+    color: var(--clr-confirmed);
+    transition: var(--transition);
+}
+.status-icon--deaths, .info-total--deaths{
+    color: var(--clr-deaths);
+    transition: var(--transition);
+}
+.status-icon--vacinated-1, .info-total--vaccinated-1{
+    color: var(--clr-vaccinated-1);
+    transition: var(--transition);
+}
+.status-icon--vacinated-2, .info-total--vaccinated-2{
+    color: var(--clr-vaccinated-2);
+    transition: var(--transition);
+}
 
 /**********************************/
 /* 7. Data Box
