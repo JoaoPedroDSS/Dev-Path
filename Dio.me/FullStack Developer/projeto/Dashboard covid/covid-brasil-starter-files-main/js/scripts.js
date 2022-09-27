@@ -1,4 +1,3 @@
-
 const _elements = {
     loading: document.querySelector(".loading"),
     switch: document.querySelector(".switch__track"),
@@ -7,7 +6,7 @@ const _elements = {
     selectList: document.querySelector(".state-select-list"),
     selectToggleIcon: document.querySelector(".state-select-toggle__icon"),
     selectSearchBox: document.querySelector(".state-select-list__search"),
-    selectStateSelected: document.querySelector(".state-select-toggle__label"),
+    selectStateSelected: document.querySelector(".state-select-toggle"),
     confirmed: document.querySelector(".info__total--confirmed"),
     deaths: document.querySelector(".info__total--deaths"),
     deathsDescription: document.querySelector(".data-box__description"),
@@ -26,18 +25,33 @@ const _data = {
 const _charts = {};
 
 _elements.switch.addEventListener("click", () => {
+    const isDark = _elements.switch.classList.toggle("switch__track--dark")
+    if(isDark==false){
+        document.documentElement.setAttribute("data-theme", "light");
+    } if(isDark==true){
+        document.documentElement.setAttribute("data-theme", "dark");
+    }
+  
+   console.log(isDark);
+
 });
 
 _elements.stateSelectToggle.addEventListener("click", () => {
-
+    _elements.selectToggleIcon.classList.toggle("state-select-toggle__icon--rotate")
+    _elements.selectList.classList.toggle("state-select-list--show");
 });
 
 _elements.selectOptions.forEach(item => {
-
+    item.addEventListener("click", () =>{
+       _elements.selectStateSelected.innerText = item.innerText;
+       _data.id=item.getAttribute("data-id"); 
+       _elements.stateSelectToggle.dispatchEvent(new Event("click"));
+    })
 });
 
-_elements.selectSearchBox.addEventListener("keyup", (e) => {
-
+_elements.selectSearchBox.addEventListener("keyup", (e) => { 
+    console.log(e.target.value.toLowerCase())
+    
 });
 
 const request = (api, id) => {
