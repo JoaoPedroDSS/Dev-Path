@@ -5,7 +5,7 @@ const _elements = {
     selectOptions: document.querySelectorAll(".state-select-list__item"),
     selectList: document.querySelector(".state-select-list"),
     selectToggleIcon: document.querySelector(".state-select-toggle__icon"),
-    selectSearchBox: document.querySelector(".state-select-list__search"),
+    selectSearchBox: document.querySelector(".state-select-list--search"),
     selectStateSelected: document.querySelector(".state-select-toggle"),
     confirmed: document.querySelector(".info__total--confirmed"),
     deaths: document.querySelector(".info__total--deaths"),
@@ -50,7 +50,16 @@ _elements.selectOptions.forEach(item => {
 });
 
 _elements.selectSearchBox.addEventListener("keyup", (e) => { 
-    console.log(e.target.value.toLowerCase())
+   const search =  e.target.value.toLowerCase();
+   for(const item of _elements.selectOptions){
+    const state = item.innerText.toLowerCase();
+    
+    if(state.includes(search)){
+        item.classList.remove("state-select-list__item--hide");
+    } else{
+        item.classList.add("state-select-list__item--hide");
+    }
+   }
     
 });
 
