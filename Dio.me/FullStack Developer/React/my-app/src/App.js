@@ -1,5 +1,5 @@
 import './App.css';
-import HelloWorld from '../components/HelloWorld';
+import HelloWorld from './HelloWorld';
 
 const name = 'Anthony'
 const url = "https://via.placeholder.com/150"
