@@ -11,7 +11,7 @@ function App() {
     <h1>Hail {name}</h1>
     <img src={url} alt="Minha foto"/>
     <HelloWorld />
-    <SayMyName nome="Mateus" />
+    <SayMyName name="Mateus" />
     </div>
     
   );
