@@ -2,6 +2,7 @@ import './App.css';
 import HelloWorld from './HelloWorld';
 import SayMyName from './SayMyName';
 import Pessoa from './Pessoa';
+import Frase from './Frase';
 
 const name = 'Anthony'
 const url = "https://via.placeholder.com/150"
@@ -14,6 +15,7 @@ function App() {
     <HelloWorld />
     <SayMyName name="Mateus" />
     <Pessoa nome="Carlo" idade="32"/>
+    <Frase/>
     </div>
     
   );
