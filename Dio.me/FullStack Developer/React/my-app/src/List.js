@@ -4,8 +4,8 @@ function List(){
         <>
             <h1>Minha Lista</h1>
             <ul>
-                <Item marca ="Forgiato"/>
-                <li>Item 2</li>
+                <Item marca ="Forgiato" ano_lançamento={1955}/>
+                <li><Item/></li>
             </ul>
         </>
     )
