@@ -2,14 +2,13 @@ import Button from "./Componentes formulário/Button"
 
 function Evento(){
     function meuEvento(){
-    var iten=document.getElementById('item')
-    iten.innerHTML= 'Olha ele aqui'
+   console.log("Ativando primeiro evento");
     }
     return(
     <div>
         <p>Clique para ativar um evento:</p>
-        <Button text="Primeiro"/>
-        <button event={meuEvento} onClick={meuEvento}>Ativar</button>
+        <Button event={meuEvento} text="Primeiro"/>
+        
         <li id={'item'}></li>
     </div>
     )
