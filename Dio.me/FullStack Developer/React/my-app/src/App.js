@@ -1,5 +1,5 @@
 import './App.css';
-import condicional from './condicional';
+import condicional from './condicional'
 function App() {
   return (
     <div className="App">
