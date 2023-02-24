@@ -1,10 +1,10 @@
 import './App.css';
-import condicional from './condicional'
+import Condicional from './Condicional';
 function App() {
   return (
     <div className="App">
      <h1>Renderização condicional</h1>
-     <condicional/>
+      <Condicional/>
     </div>
     
   );
