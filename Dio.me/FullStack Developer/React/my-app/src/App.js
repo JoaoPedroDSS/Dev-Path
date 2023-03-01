@@ -1,16 +1,29 @@
-import './App.css';
-import {useState} from 'react'
-import SeuNome from './Componentes formulário/SeuNome';
-import Saudacao from './Componentes formulário/Saudacao';
+import { BrowserRouter as Router, Routes,Route, Link } from "react-router-dom";
+import Home from './pages/Home'
+import Empresa from './pages/Empresa'
+import Contato from './pages/Contato'
+
 function App() {
-  const[nome, setNome] = useState()
+  
   return (
-    <div className="App">
-      <h1>State Lift</h1>
-      <SeuNome setNome={setNome}/>
-      <Saudacao nome={nome}/>
-    </div>
-    
+    <Router>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/empresa">Empresa</Link></li>
+        <li><Link to="/contato">Contato</Link></li>
+      </ul>
+      <Routes>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route path="/contato">
+          <Contato/>
+        </Route>
+        <Route path="/empresa">
+          <Empresa/>
+        </Route>
+      </Routes>
+    </Router>
   );
 
 }
